@@ -6,58 +6,99 @@
   <title>UNDERWORLD CRIMINALS</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f0f0f0;
-      text-align: center;
+      font-family: 'Arial', sans-serif;
+      background-color: #222222;
+      color: #fff;
+      margin: 0;
       padding: 20px;
+      text-align: center;
+      animation: fadeIn 2s ease-in-out;
     }
 
     h1 {
-      color: #333;
-      font-size: 36px;
+      color: #ff7043;
+      font-size: 48px;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      animation: slideIn 1s ease-out;
     }
 
     .photo-container {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
-      gap: 20px;
+      gap: 30px;
+      animation: fadeIn 3s ease-in-out;
     }
 
     .photo-card {
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      width: 200px;
-      padding: 10px;
-      text-align: center;
+      background-color: #333;
+      border-radius: 15px;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+      width: 250px;
+      padding: 15px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .photo-card img {
       width: 100%;
       border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+    }
+
+    .photo-card img:hover {
+      transform: scale(1.1);
     }
 
     .caption {
-      font-size: 18px;
-      color: #555;
-      margin-top: 10px;
+      font-size: 20px;
+      color: #ff7043;
+      margin-top: 15px;
       font-weight: bold;
+      text-shadow: 1px 1px 2px #000;
+      animation: fadeIn 1.5s ease-in-out;
     }
 
     .funny-btn {
-      background-color: #ff7043;
+      background-color: #ff5722;
       border: none;
-      padding: 10px;
+      padding: 12px 18px;
       color: white;
-      font-size: 16px;
+      font-size: 18px;
       border-radius: 5px;
       cursor: pointer;
-      margin-top: 15px;
+      margin-top: 20px;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      text-transform: uppercase;
     }
 
     .funny-btn:hover {
-      background-color: #ff5722;
+      background-color: #ff7043;
+      transform: scale(1.1);
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+      }
+      to {
+        transform: translateX(0);
+      }
     }
   </style>
 </head>
@@ -84,6 +125,11 @@
       <img src="https://envs.sh/lhO.jpg" alt="Trying to crack JEE without studying">
       <div class="caption">TRYING TO CRACK JEE WITHOUT STUDYING</div>
       <button class="funny-btn">BOOTHAM</button>
+    </div>
+    <div class="photo-card">
+      <img src="https://envs.sh/ld5.jpg" alt="New photo for the collection">
+      <div class="caption">THE GUY WHO LOOKS LIKE PADIPPI</div>
+      <button class="funny-btn">PROUD XYLEMIAN</button>
     </div>
   </div>
 
